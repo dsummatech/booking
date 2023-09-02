@@ -21,7 +21,6 @@ body .page{
     height: max-content;
     position: absolute;
     overflow-x: hidden;
-    padding: 20px 0;
 }
 body .body{
     background-color: black;
@@ -41,11 +40,16 @@ body .body{
         height: 110vw;
     }
 }
+@media screen and (max-width:500px){
+    body .body{
+        height: 150vw;
+    }
+}
 body .body .abs{
     position: absolute;
     width: inherit;
     height: inherit;
-    opacity: 20%;
+    opacity: 40%;
     overflow-y: hidden;
 }
 body .body .abs img{
@@ -63,6 +67,17 @@ body .body .rel{
     background-color: transparent;
     transition: 1s ease;
     font-size: 2vw;
+}
+body .body .rel h3{
+    font-family: serif;
+}
+body .body .rel .rel-h3{
+    font-size: 5vw;
+}
+@media screen and (max-width:500px){
+    body .body .rel .rel-h3{
+        font-size: 7vw;
+    }
 }
 
 
@@ -84,10 +99,18 @@ body .body .rel button{
         font-size: 2.5vw;
     }
 }
+@media screen and (max-width:500px){
+    body .body .rel{
+        font-size: 4vw;
+    }
+    body .body .rel button{
+        font-size: 3vw;
+    }
+}
 
 header{
     height: max-content;
-    max-height: 15%;
+    max-height: 35%;
     padding: 15px 0;
     width: 100%;
     background-color: transparent;
@@ -98,12 +121,14 @@ header{
     font-weight: bold;
     transition: 1s ease;
     font-family:serif;
+    overflow: hidden;
 }
 header .menu-social{
     width: 100%;
     height: max-content;
     display: inline-flex;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 header .menu-social .men-social{
     word-spacing: 10px;
@@ -144,6 +169,14 @@ header .burger:hover{
 }
 @media screen and (max-width:1000px) {
     header .burger{
+        display: block;
+    }
+}
+header .mobile-logo{
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    header .mobile-logo{
         display: block;
     }
 }
@@ -453,7 +486,7 @@ body .news{
     width: 80%;
     position: relative;
     margin: auto;
-    background-image: url("images/h9.jpg");
+    background-image: url("images/cr5.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -475,3 +508,244 @@ body .news h1{
     color: bisque;
     font-family: cursive;
 }
+body .news .rel form .form{
+    background-color: bisque;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+body .news .rel form input{
+    width: 75%;
+    height: 50px;
+    border: 0;
+    outline: none;
+    font-size: 110%;
+    margin: 0 6px;
+    background-color: bisque;
+    border-radius: 5px;
+    color: black;
+    font-size: 150%;
+}
+body .news .rel form button{
+    background-color: transparent;
+    font-size: 150%;
+    color: #800040;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.category .price {
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+  }
+  .category .price .price-box {
+    height: -moz-max-content;
+    height: max-content;
+    width: 90%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin:0 5%;
+  }
+  @media screen and (max-width: 700px) {
+    .category .price .price-box {
+      height: -moz-max-content;
+      height: max-content;
+      width: 90%;
+      display: block;
+      justify-content: unset;
+      margin: 0 5%;
+    }
+  }
+  .category .price .price-box .price-col {
+    width: 28%;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: transparent;
+    margin: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(183, 180, 180);
+  }
+  @media screen and (max-width: 700px) {
+    .category .price .price-box .price-col {
+      width: 80%;
+      height: -moz-max-content;
+      height: max-content;
+      position: relative;
+      margin: auto;
+      margin-top: 70px;
+    }
+  }
+  .category .price .price-box .price-col .img {
+    width: 100%;
+    text-align: center;
+    color: #800040;
+    font-size: 150%;
+  }
+  .category .price .price-box .price-col img {
+    width: 100px;
+    position: relative;
+    margin: auto;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 0px;
+  }
+  .category .price .price-box .price-col .p {
+    position: relative;
+    bottom: 0px;
+  }
+  .category .price .price-box .price-col .p h3 {
+    font-family: serif;
+    color: #800040;
+  }
+  .category .price .price-box .price-col .p h2 {
+    font-family: cursive;
+    color: white;
+  }
+  .category .price .price-box .price-col .p h6 {
+    color: black;
+    padding: 0 0 10px 0;
+  }
+  .category .price .price-box .price-col .p button {
+    color: bisque;
+    padding: 20px 0 0px 0;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid bisque;
+    font-size: 10px;
+  }/*# sourceMappingURL=new.css.map */
+
+  footer{
+    width: 100%;
+    padding: 10px 0;
+  }
+  footer .foot-in{
+    width: 88%;
+    position: relative;
+    margin: auto;
+    padding: 15px;
+  }
+  footer .footer-in{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 15px 0;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  @media screen and (max-width:800px){
+    footer .footer-in{
+        display: block;
+        justify-content: unset;
+      }
+  }
+  footer .footer-in .foot-col{
+    width: 45%;
+    height: max-content;
+    padding: 10px;
+  }
+  @media screen and (max-width:800px){
+    footer .footer-in .foot-col{
+        width: 90%;
+        position: relative;
+        margin: auto;
+      }
+  }
+  footer h2{
+    color: rgb(2, 2, 67);
+    font-family: serif;
+  }
+  footer h6{
+    color: #800040;
+  }
+  footer .footer-media{
+    word-spacing: 10px;
+  }
+  footer .footer-media span{
+    padding: 3px 5px;
+    border: 1px solid black;
+  }
+  footer .answers p{
+    border-bottom: 2px solid #800040;
+    padding: 10px;
+    cursor: pointer;
+  }
+  footer .answers p .span{
+    display: none;
+  }
+  footer .footer-bottom{
+    padding: 10px 0;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: max-content;
+    background-color: #800040;
+    color: white;
+  }
+  footer .footer-bottom img{
+    width: 100px;
+  }
+  .contact{
+    border: 1px solid black;
+    padding: 10px;
+    width: 90%;
+    position: relative;
+    margin: auto;
+  }
+  .contact .form{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+  }
+  .contact .form input{
+    background-color: bisque;
+    width: 50%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 120%;
+  }
+  @media screen and (max-width:800px){
+    .contact .form input{
+        width: 100%;
+      }
+  }
+  .contact .form textarea{
+    background-color: bisque;
+    width: 80%;
+    border: 0;
+    outline: 0;
+    font-size: 120%;
+  }
+  @media screen and (max-width:800px){
+    .contact .form textarea{
+        width: 100%;
+      }
+  }
+  .contact .form .form-button{
+    width: 80%;
+    text-align: right;
+  }
+  @media screen and (max-width:800px){
+    .contact .form .form-button{
+        width: 100%;
+      }
+  }
+  .contact .form .form-button button{
+    padding: 8px 20px;
+    background-color: rgb(2, 2, 80);
+    color: white;
+    border: 0;
+    cursor: pointer;
+  }
+  

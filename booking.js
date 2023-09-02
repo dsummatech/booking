@@ -24,9 +24,15 @@ $(".burger").click(function () {
 $(".close").click(function () {
   $(".mobile-menu").css({left:"110%"});
 })
+$(".mobile-menu").click(function () {
+  $(".mobile-menu").css({left:"110%"});
+})
 $("body .welcome-note .note-write .note-read").click(function () {
   $(this).children("body .welcome-note .note-write .note-read p").slideToggle(200);
-  $(this).children("body .welcome-note .note-write .note-read h4 span").removeClass("fa-plus");
+})
+
+$("footer .answers p").click(function () {
+  $(this).children("footer .answers p .span").slideToggle(200);
 })
 
 var box = 0;
